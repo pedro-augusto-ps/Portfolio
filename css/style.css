@@ -27,6 +27,16 @@ body {
     line-height: 1.5em;
     background-color: var(--fundo-principal);
     color: var(--texto);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.escuro {
+    --fundo-principal: #222222;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+    --destaque: #ff5522;
+    --destaque-inverso: #a73917;
+    --fundo-card: #444444;    
 }
 
 header {
@@ -92,7 +102,7 @@ section#ficha h1 {
     color: var(--destaque);
     margin: 15px 0;
     font-size: 1.6em;
-    text-align: left;
+    text-align: center;
 }
 
 div#social {
@@ -177,7 +187,7 @@ article h2 {
 /*Formação*/
 #formacao-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -206,6 +216,7 @@ article h2 {
     color: var(--destaque-inverso);
     font-size: 1.1em;
 }
+/*FIM Formação*/
 
 #projeto-container {
     display: flex;
@@ -270,7 +281,7 @@ footer a:hover {
         grid-column: 2 / 3;
         height: fit-content;
         position: sticky;
-        top: 45px;
+        top: 60px;
     }
     
     section#detalhes {
