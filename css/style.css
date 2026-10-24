@@ -86,7 +86,7 @@ section#ficha {
 }
 
 section#ficha > img.foto {
-    width: 200px;
+    width: 250px;
     aspect-ratio: 1/1;
     object-fit: cover;
     overflow: hidden;
@@ -96,6 +96,7 @@ section#ficha > img.foto {
     display: block;
     margin: auto;
     margin-bottom: 15px;
+    object-position: center;
 }
 
 section#ficha h1 {
